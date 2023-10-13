@@ -6,11 +6,17 @@ This is just the basic 46 hirgana characters along with their basic 46 romaji co
 You will be given options for either inputting hirgana characters for romaji and vice versus.
 There is a joke option if you cannot make up your mind.
 There are two options depending on where in the program you decided not to input a 'Y' or 'N' when asked.
+With that being said, have fun learning the basic hiragana, ( I will hopefully get started on Katakana :-) )!!!
 ### What is needed in order to run
 You will need to have the japanese keyboard (if you are on on windows) or something similar on mac or linux.
 When you need to type a character change over to the keyboard. When you need to comfirm "yes" or "no", change back to the regular keyboard.
-### How to run
+### How to run (old)
 This was coded using the Windows Subsystem for Linux with the use of Ubuntu.
 In the terminal, use : gcc game.c -o game, or what ever name you perfer for instead like " gcc game.c -o 'Insert your own file name here' "
+### How to run (new)
+In the terminal or command line, use : gcc game.c -o game, or what ever name you perfer for instead like " gcc game.c -o 'Insert your own file name here' "
 ### Reason for using Ubuntu
 I am able to show Japanese Characters on the terminal using Ubuntu, I had trouble doing this with Windows commandline, and I am not familiar with Mac.
+I was using MinGW, but now I am using cygwin and now it runs. Which is great!
+### Update
+Now can run in terminal or commandline not just Ubuntu terminal. 
