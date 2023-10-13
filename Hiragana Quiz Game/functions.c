@@ -16,9 +16,9 @@ void welcome()
     printf("ひらがな の テスト へ ようこそ！！！(WELCOME TO THE HIRAGANA QUIZ!!!)\n");
     printf("Here you can test and practice your knowledge of Hiragana!!!\n");
     printf("Katakana will be added later on.\n");
-    printf("Like when the developer gets off her lazy but and adds it in :)\n");
+    printf("Like when the developer gets off her lazy butt and adds it in :)\n");
     printf("But for now...\n");
-    
+
 }
 
 
@@ -31,7 +31,7 @@ char get_answer()
 }
 
 void get_hira_and_roma(char *h, char *r)
-{ 
+{
    //Seed the random number generator
    //Making things random
    //Making random row and column indices
@@ -81,7 +81,7 @@ void hiragana_to_romaji()
      printf("さあ、はじめましょう！(Well, Let's begin!)\n");
      while(again != 'N')
      {
-          get_hira_and_roma(hira, roma);   
+          get_hira_and_roma(hira, roma);
           printf("えいごで これは ’%s’ といいますか。(How would you say %s in English)\n", hira,hira);
           scanf("%s", check);
          if(strcmp(roma,check) == 0)
