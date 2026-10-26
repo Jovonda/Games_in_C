@@ -30,4 +30,4 @@ In the terminal or command line, use : gcc game.c -o game, or what ever name you
 
 
 ## Future Plans
-I will still keep these up here, but I might come back and change these to make these better. I will try to make other games in C/C++, but for more development on Japanese studies, I will probably switch over to python to make this easier.
+I will still keep these up here, but I might come back and change these to make these better. I will try to make other games in C/C++, but for more development on Japanese studies, I will probably switch over to python to make this easier and put things here from another account when it is not 'junk'
