@@ -13,7 +13,7 @@ char check[10];
 //This is the welcome dialouge of the game
 void welcome()
 {
-    printf("ひらがな の テスト へ ようこそ！！！(WELCOME TO THE HIRAGANA QUIZ!!!)\n");
+    printf("ひらがなテストへようこそ！！！(WELCOME TO THE HIRAGANA QUIZ!!!)\n");
     printf("Here you can test and practice your knowledge of Hiragana!!!\n");
     printf("Katakana will be added later on.\n");
     printf("Like when the developer gets off her lazy butt and adds it in :)\n");
@@ -82,21 +82,21 @@ void hiragana_to_romaji()
      while(again != 'N')
      {
           get_hira_and_roma(hira, roma);
-          printf("えいごで これは ’%s’ といいますか。(How would you say %s in English)\n", hira,hira);
+          printf("'%s'はローマ字で何ですか？(What is '%s' in romaji)\n", hira,hira);
           scanf("%s", check);
          if(strcmp(roma,check) == 0)
          {
-             printf("ただしい！！(Correct!!)\n");
+             printf("正しい！！(Correct!!)\n");
              right++;
              score+=5;
          }
          else
          {
-             printf("すみません、それは ちがいました。(Sorry, that was wrong.)\n");
+             printf("残念！不正解です。(Too bad! That's incorrect.)\n");
              wrong++;
          }
-         printf("もう いちど いきたい ですか？(Want to go again?)\n");
-         printf("はいなら「Y]と、いいえなら「N]と タイプしてください。(Please type (Y) for yes or (N) for no.)\n");
+         printf("もう一度ゲームをしますか？(Would you like to play the game again?)\n");
+         printf("続けるなら「Y]、終わるなら「N]を入力してください。(Enter (Y) to continue or (N) to finish.)\n");
          again = get_answer();
          if(again == 'Y')
          {
@@ -104,8 +104,8 @@ void hiragana_to_romaji()
          }
          else if(again == 'N')
          {
-            printf("あなたの さいしゅうすこあは %dてん です。(Your final score is %d points)\n", score,score);
-            printf("あなたは %dもんせいかいで、%dもん ごと がありました。(You got %d right and %d wrong)\n", right, wrong,right,wrong);
+            printf("最終スコアは %d点です。(Your final score is %d points)\n", score,score);
+            printf("正解は %d問、不正解は%d問でした。(You got %d questions correct and %d incorrect)\n", right, wrong,right,wrong);
             printf("じゃあまたね！(See you later!)\n");
          }
     }
@@ -116,15 +116,15 @@ void joke()
     char joke[100];
     printf("何をしたいですか。(What would you like to do?)\n");
     scanf("%s", joke);
-    printf("%s といいます。(You said %s.)\n", joke, joke);
-    printf("さんねん ですが、する こと が できません。(Sorry, I can't do that.)\n");
+    printf("%s と言いましたね。(You said '%s' didn't you?)\n", joke, joke);
+    printf("ごめんなさい、それはできません。(Sorry, I can't do that.)\n");
     printf("じゃあまたね！(See you later!)\n");
 }
 
 void translated_cant()
 {
-    printf("さんねん です が、する こと が できません。(Sorry, I can't do that.)\n");
-    printf("じゃあまたね！(See you later!)\n");
+   printf("ごめんなさい、それはできません。(Sorry, I can't do that.)\n");
+   printf("じゃあまたね！(See you later!)\n");
 }
 
 void cant()
